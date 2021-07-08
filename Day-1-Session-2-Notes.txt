@@ -1,0 +1,80 @@
+
+
+Device_data
+
+Truck Info=>						EventHub>
+Generating lot of data
+
+Use case TruckTracking
+					
+TruckInfo(VechileId string
+unique data, VechileType String(Car/Truck/Bus), (Light)sensor1 double(12.99-98.99) , sensor2 (Infra) (-12 to 12), sensor3 boolean (break_applied yes/no), speed in kmsph(0-200), location { longitude, latitude })
+
+VechileId:38c825c7-6a37-46a9-81e2-fd921b4e227e
+VechileType:Truck
+Sensor 1:16.358908790393308
+Sensor 2:10.933381688966634
+Sensor 3:true
+SpeedinKmsph :107
+Location :14.496526,70.298627
+{
+	"vehicleId": "38c825c7-6a37-46a9-81e2-fd921b4e227e",
+	"vehicleType": "Truck",
+	"sensor1" : 16.358908790393308,
+	"sensor2" : 10.933381688966634,
+	"sensor3" : true,
+	"speed" : 107,
+	"location" : { "lat": "14.496526", "lon": "70.298627"}
+}
+
+UseCase POS System
+
+Order(orderId, date, amount, products: [product_info{product_code, name, price, qty}])
+
+
+m-c02x7d7jjg5h:GenerateStreamData s0v00eo$ git init
+Initialized empty Git repository in /Users/s0v00eo/demo-workspace/GenerateStreamData/.git/
+
+m-c02x7d7jjg5h:GenerateStreamData s0v00eo$ git remote add origin https://github.com/sasikumarvenkat/GenerateStreamData.git
+
+m-c02x7d7jjg5h:GenerateStreamData s0v00eo$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	pom.xml
+	src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+m-c02x7d7jjg5h:GenerateStreamData s0v00eo$ git add .
+m-c02x7d7jjg5h:GenerateStreamData s0v00eo$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   pom.xml
+	new file:   src/com/demo/truck/data/GenrateTruckInfo.java
+	new file:   src/com/demo/truck/data/GenreateRandomTruckInfoJson.java
+	new file:   src/com/demo/truck/data/VehicleInfo.java
+
+m-c02x7d7jjg5h:GenerateStreamData s0v00eo$ git commit -m "Sample Stream data"
+[master (root-commit) eb8aeda] Sample Stream data
+ 4 files changed, 258 insertions(+)
+ create mode 100644 pom.xml
+ create mode 100644 src/com/demo/truck/data/GenrateTruckInfo.java
+ create mode 100644 src/com/demo/truck/data/GenreateRandomTruckInfoJson.java
+ create mode 100644 src/com/demo/truck/data/VehicleInfo.java
+
+m-c02x7d7jjg5h:GenerateStreamData s0v00eo$ git push origin master
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (11/11), 2.66 KiB | 908.00 KiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0)
+To https://github.com/sasikumarvenkat/GenerateStreamData.git
+ * [new branch]      master -> master
