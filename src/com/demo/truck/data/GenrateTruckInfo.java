@@ -61,7 +61,7 @@ public class GenrateTruckInfo {
 	}
 
 	public static String generateRandomVehicleType() {
-		String[] vehicleTypeArray = { "Car", "Truck", "Bus" };
+		String[] vehicleTypeArray = { "Car", "Truck", "Bus", "Mini-Van", "Auto" };
 		return vehicleTypeArray[new Random().nextInt(vehicleTypeArray.length)];
 	}
 

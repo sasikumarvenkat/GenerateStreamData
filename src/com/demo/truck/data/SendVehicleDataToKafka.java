@@ -14,7 +14,7 @@ public class SendVehicleDataToKafka {
 
 	public static void main(String[] args) throws InterruptedException {
 		while (true) {
-			int records = new Random().nextInt(15);
+			int records = new Random().nextInt(5);
 			for (int i = 1; i <= records; i++) {
 				VehicleInfo vehicleInfo = new VehicleInfo();
 				vehicleInfo.setVehicleId(generateRandomVehicleId());
@@ -25,7 +25,10 @@ public class SendVehicleDataToKafka {
 				vehicleInfo.setSpeed(generateSpeed(0, 200));
 				Map<String, String> jw = randomLonLat(12, 15, 70, 80);
 				vehicleInfo.setLocation(new Location(Double.parseDouble(jw.get("J")), Double.parseDouble(jw.get("W"))));
-				SimpleKafkaProducer.sendDataToKafka(vehicleInfo.toString(), "truckInfo");
+				// SimpleKafkaProducer.sendDataToKafkaSingleBroker(vehicleInfo.toString(),
+				// "truckInfo");
+				SimpleKafkaProducer.sendDataToKafkaMultipleBroker(vehicleInfo.toString(), "truck-info-new",
+						vehicleInfo.getVehicleType());
 			}
 			System.out.println("Written " + records + " to Kafka..");
 			Thread.sleep(3000);
