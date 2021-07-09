@@ -7,17 +7,12 @@ import static com.demo.truck.data.GenrateTruckInfo.generateSensorData;
 import static com.demo.truck.data.GenrateTruckInfo.generateSpeed;
 import static com.demo.truck.data.GenrateTruckInfo.randomLonLat;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Map;
 import java.util.Random;
 
-public class GenreateRandomTruckInfoJson {
+public class SendVehicleDataToKafka {
 
-	public static void main(String[] args) throws InterruptedException, IOException {
-
+	public static void main(String[] args) throws InterruptedException {
 		while (true) {
 			int records = new Random().nextInt(15);
 			for (int i = 1; i <= records; i++) {
@@ -30,16 +25,12 @@ public class GenreateRandomTruckInfoJson {
 				vehicleInfo.setSpeed(generateSpeed(0, 200));
 				Map<String, String> jw = randomLonLat(12, 15, 70, 80);
 				vehicleInfo.setLocation(new Location(Double.parseDouble(jw.get("J")), Double.parseDouble(jw.get("W"))));
-				// Write the vehicleInfo data into a file
-				File file = new File("/Users/s0v00eo/demo-workspace/GenerateStreamData/simulated-data/data/"
-						+ vehicleInfo.getVehicleId() + ".json");
-				FileWriter fw = new FileWriter(file, true);
-				BufferedWriter bw = new BufferedWriter(fw);
-				bw.append(vehicleInfo.toString());
-				bw.flush();
-				bw.close();
+				SimpleKafkaProducer.sendDataToKafka(vehicleInfo.toString(), "truckInfo");
 			}
-			Thread.sleep(300);
+			System.out.println("Written " + records + " to Kafka..");
+			Thread.sleep(3000);
 		}
+
 	}
+
 }
