@@ -66,3 +66,43 @@ scala> truckJsonFile.filter(_.contains("Bus")).filter(_.contains("\"speed\":52")
 saveAsObjectFile   saveAsTextFile
 
 scala> truckJsonFile.filter(_.contains("Bus")).filter(_.contains("\"speed\":52")).saveAsTextFile("bus-speed-52")
+
+
+scala> var truckInfoDF=spark.read.json("truck_info.json")
+truckInfoDF: org.apache.spark.sql.DataFrame = [location: struct<lat: double, lon: double>, sensor1: double ... 5 more fields]
+
+scala> truckInfoDF.printSchema
+root
+ |-- location: struct (nullable = true)
+ |    |-- lat: double (nullable = true)
+ |    |-- lon: double (nullable = true)
+ |-- sensor1: double (nullable = true)
+ |-- sensor2: double (nullable = true)
+ |-- sensor3: boolean (nullable = true)
+ |-- speed: long (nullable = true)
+ |-- vehicleId: string (nullable = true)
+ |-- vehicleType: string (nullable = true)
+
+
+scala> truckInfoDF.show(5)
+
+scala> truckInfoDF.createOrReplaceTempView("truck")
+
+scala> spark.sql("show tables").show
+21/07/10 10:31:09 WARN ObjectStore: Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 1.2.0
+21/07/10 10:31:09 WARN ObjectStore: Failed to get database default, returning NoSuchObjectException
+21/07/10 10:31:09 WARN ObjectStore: Failed to get database global_temp, returning NoSuchObjectException
++--------+---------+-----------+
+|database|tableName|isTemporary|
++--------+---------+-----------+
+|        |    truck|       true|
++--------+---------+-----------+
+
+
+scala> spark.sql("select * from truck where speed >= 50 and speed <=60").show(10)
+
+scala> spark.sql("select * from truck where speed >= 50 and speed <=60 and vehicleType='Bus'").show(10)
+
+scala> spark.sql("select vehicleType, avg(sensor1), avg(sensor2) from truck group by vehicleType").show
+
+

@@ -1,0 +1,5 @@
+{"vehicleId":"78358cb0-b181-4f1e-bb82-fd3a862043d9","vehicleType":"Car","sensor1":89.59850443960237,"sensor2":0.9070102063995282,"sensor3":true,"speed":52,"location":{"lat":12.120311,"lon":78.25199}}
+{"vehicleId":"578f4db1-8b7f-4a10-b48d-715daf97b885","vehicleType":"Car","sensor1":25.248341867250907,"sensor2":-6.089559105800137,"sensor3":false,"speed":52,"location":{"lat":12.608729,"lon":75.128404}}
+{"vehicleId":"5bbe9ade-f209-4194-bb8e-07ce70b717cf","vehicleType":"Car","sensor1":25.694165217700878,"sensor2":10.05658587038348,"sensor3":false,"speed":52,"location":{"lat":13.551499,"lon":71.41261}}
+{"vehicleId":"f242fcbd-4661-4624-84f7-4605cef8691b","vehicleType":"Car","sensor1":19.41755010005382,"sensor2":11.278298265586383,"sensor3":false,"speed":52,"location":{"lat":12.856559,"lon":73.456216}}
+{"vehicleId":"fa8fa515-660d-4e32-b4de-abc2669b8c6b","vehicleType":"Car","sensor1":37.67381091921035,"sensor2":-0.18131613115020961,"sensor3":false,"speed":52,"location":{"lat":13.596766,"lon":73.365528}}
