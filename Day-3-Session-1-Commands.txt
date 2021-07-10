@@ -1,0 +1,68 @@
+
+scala> var list = 1 to 1000000
+
+scala> val listRdd = sc.parallelize(list)
+listRdd: org.apache.spark.rdd.RDD[Int] = ParallelCollectionRDD[0] at parallelize at <console>:26
+
+scala> listRdd.getNumPartitions
+res1: Int = 12
+
+scala> val count=listRdd.filter(_ % 13 == 0).collect.size
+count: Int = 76923
+
+scala> val count=listRdd.filter(_ % 13 == 0).collect.size
+count: Int = 76923
+
+scala> val count=listRdd.filter(_ % 13 == 0).collect.size
+count: Int = 76923
+
+scala> listRdd.cache
+res2: listRdd.type = ParallelCollectionRDD[0] at parallelize at <console>:26
+
+scala> val count=listRdd.filter(_ % 13 == 0).collect.size
+count: Int = 76923
+
+scala> val count=listRdd.filter(_ % 13 == 0).collect.size
+count: Int = 76923
+
+scala> var truckJsonFile = sc.textFile("truck_info.json")
+truckJsonFile: org.apache.spark.rdd.RDD[String] = truck_info.json MapPartitionsRDD[7] at textFile at <console>:24
+
+
+scala> var bus=truckJsonFile.filter(_.contains("Bus"))
+bus: org.apache.spark.rdd.RDD[String] = MapPartitionsRDD[8] at filter at <console>:25
+
+scala> bus.count
+res4: Long = 4194
+
+scala> truckJsonFile.count
+res5: Long = 12608
+
+scala> var car=truckJsonFile.filter(_.contains("Car"))
+car: org.apache.spark.rdd.RDD[String] = MapPartitionsRDD[9] at filter at <console>:25
+
+scala> car.count
+res6: Long = 4237
+
+scala> var truck=truckJsonFile.filter(_.contains("Truck"))
+truck: org.apache.spark.rdd.RDD[String] = MapPartitionsRDD[10] at filter at <console>:25
+
+scala> truck.count
+res7: Long = 4177
+
+scala> 4177+4237+4194
+res8: Int = 12608
+
+
+scala> bus.collect
+
+scala> truckJsonFile.cache
+res11: org.apache.spark.rdd.RDD[String] = truck_info.json MapPartitionsRDD[7] at textFile at <console>:24
+
+scala> truckJsonFile.filter(_.contains("Bus")).filter(_.contains("\"speed\":52")).count
+res12: Long = 21
+
+scala> truckJsonFile.filter(_.contains("Bus")).filter(_.contains("\"speed\":52")).saveAs
+saveAsObjectFile   saveAsTextFile
+
+scala> truckJsonFile.filter(_.contains("Bus")).filter(_.contains("\"speed\":52")).saveAsTextFile("bus-speed-52")

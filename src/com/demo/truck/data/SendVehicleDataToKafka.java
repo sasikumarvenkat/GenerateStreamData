@@ -14,7 +14,8 @@ public class SendVehicleDataToKafka {
 
 	public static void main(String[] args) throws InterruptedException {
 		while (true) {
-			int records = new Random().nextInt(5);
+			int records = new Random().nextInt(5);//in-memory mutable 4Bytes
+			///RDD rdd1 = rdd.load("truck_info.json")// 2551818(2.5) < 128 MB(block size) 16 blocks (4 nodes 4 block each)
 			for (int i = 1; i <= records; i++) {
 				VehicleInfo vehicleInfo = new VehicleInfo();
 				vehicleInfo.setVehicleId(generateRandomVehicleId());

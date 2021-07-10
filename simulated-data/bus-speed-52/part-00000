@@ -1,0 +1,10 @@
+{"vehicleId":"f3b6e369-6268-447b-a43c-dd3da2e3a4ed","vehicleType":"Bus","sensor1":51.021055338250626,"sensor2":4.592559396272126,"sensor3":false,"speed":52,"location":{"lat":14.361702,"lon":72.801493}}
+{"vehicleId":"743fac08-eddb-4453-a8d3-76d6d2245701","vehicleType":"Bus","sensor1":61.824769316409096,"sensor2":-6.506160924828668,"sensor3":false,"speed":52,"location":{"lat":12.050757,"lon":79.416949}}
+{"vehicleId":"db040ee6-b324-46a8-9c0e-bfeacdb145f7","vehicleType":"Bus","sensor1":87.8552397509587,"sensor2":-2.8281954545334624,"sensor3":true,"speed":52,"location":{"lat":14.414829,"lon":70.257293}}
+{"vehicleId":"d2fc59ee-1ab4-4b12-96b7-82b13fcbfda9","vehicleType":"Bus","sensor1":53.48655905692571,"sensor2":-3.858313752837992,"sensor3":true,"speed":52,"location":{"lat":12.612563,"lon":74.243619}}
+{"vehicleId":"faa9436e-10ee-4dc6-a814-2a3c758eeea2","vehicleType":"Bus","sensor1":83.93389051267133,"sensor2":-3.7433645957505384,"sensor3":true,"speed":52,"location":{"lat":13.743333,"lon":77.946936}}
+{"vehicleId":"63ba9c05-ff3f-4227-886c-a8a2c6d0c4bc","vehicleType":"Bus","sensor1":19.614940933679698,"sensor2":-3.7875160992866217,"sensor3":true,"speed":52,"location":{"lat":14.803911,"lon":72.531438}}
+{"vehicleId":"b17c660a-9489-47fc-96ac-abb49da433a1","vehicleType":"Bus","sensor1":74.07737646183482,"sensor2":-2.808835379627727,"sensor3":false,"speed":52,"location":{"lat":14.706228,"lon":78.552853}}
+{"vehicleId":"b48d0ae2-f845-4f8b-b3e3-c29b349e2e89","vehicleType":"Bus","sensor1":92.90869706785881,"sensor2":2.197050313160968,"sensor3":true,"speed":52,"location":{"lat":12.584913,"lon":79.349618}}
+{"vehicleId":"0f1a50e6-8218-4a9d-aa2a-fbba4e284eef","vehicleType":"Bus","sensor1":27.391378062955443,"sensor2":-10.874926759766735,"sensor3":true,"speed":52,"location":{"lat":12.40929,"lon":72.988451}}
+{"vehicleId":"b03cb897-eede-488e-8373-111f033f122f","vehicleType":"Bus","sensor1":56.42311684192332,"sensor2":3.5321803970058525,"sensor3":true,"speed":52,"location":{"lat":13.560748,"lon":79.219317}}

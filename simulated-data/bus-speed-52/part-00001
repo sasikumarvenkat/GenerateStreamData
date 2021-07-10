@@ -1,0 +1,11 @@
+{"vehicleId":"a70c1c0a-5c97-4239-99b5-2250afd6e5ec","vehicleType":"Bus","sensor1":98.22916535073173,"sensor2":10.454590198439945,"sensor3":false,"speed":52,"location":{"lat":14.477528,"lon":73.671785}}
+{"vehicleId":"43f25fc3-103f-4406-b302-746a416e9b87","vehicleType":"Bus","sensor1":25.779262851443725,"sensor2":-6.556863881212315,"sensor3":false,"speed":52,"location":{"lat":12.858053,"lon":72.207535}}
+{"vehicleId":"dbe9e723-ca1a-49f1-a4fb-0391eebe7727","vehicleType":"Bus","sensor1":62.9695881576166,"sensor2":8.732844169898346,"sensor3":false,"speed":52,"location":{"lat":13.909435,"lon":73.436235}}
+{"vehicleId":"49e100f4-a63c-4598-976e-b457793a924c","vehicleType":"Bus","sensor1":43.315515284955424,"sensor2":5.888358540494309,"sensor3":true,"speed":52,"location":{"lat":14.701803,"lon":73.687371}}
+{"vehicleId":"ea208f73-ac47-414a-a1b6-1e2b5691efe8","vehicleType":"Bus","sensor1":45.560025515458825,"sensor2":-6.637599287386367,"sensor3":true,"speed":52,"location":{"lat":13.044573,"lon":71.579396}}
+{"vehicleId":"1ca79be1-9efa-4874-ad41-106ee4c52199","vehicleType":"Bus","sensor1":97.19022755299154,"sensor2":10.682612000432727,"sensor3":false,"speed":52,"location":{"lat":13.21893,"lon":78.002622}}
+{"vehicleId":"fba6a13c-f8f2-44aa-ae35-2ac364964081","vehicleType":"Bus","sensor1":92.5134084172708,"sensor2":-10.543997894381544,"sensor3":true,"speed":52,"location":{"lat":13.144704,"lon":74.76154}}
+{"vehicleId":"8e02513c-42ba-4a2c-a008-472f1cf3d44b","vehicleType":"Bus","sensor1":24.363916321195436,"sensor2":-0.5659081185946029,"sensor3":false,"speed":52,"location":{"lat":14.373391,"lon":75.190893}}
+{"vehicleId":"cea4dfb9-9beb-4517-8c79-a085ef1004f7","vehicleType":"Bus","sensor1":68.3405520840297,"sensor2":1.7914041125225904,"sensor3":true,"speed":52,"location":{"lat":14.510264,"lon":76.424101}}
+{"vehicleId":"2cf74a6d-4190-4ddf-acde-67c276edff1f","vehicleType":"Bus","sensor1":25.453934147041274,"sensor2":-0.20531647402291142,"sensor3":true,"speed":52,"location":{"lat":12.375105,"lon":75.274647}}
+{"vehicleId":"188a3f4e-14a5-4bbb-8dce-a66dfb386140","vehicleType":"Bus","sensor1":15.979031344259955,"sensor2":-4.275023561050478,"sensor3":true,"speed":52,"location":{"lat":14.691541,"lon":74.647554}}
